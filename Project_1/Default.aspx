@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- 
 Author Name: Anuroop, Ivan
-    Student Number:200265054, 200265
+    Student Number:200265054, 200253631
     Date: 08-06-2016
     Version:1.1
     Discription: Default Page to track games
