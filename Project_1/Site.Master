@@ -42,6 +42,9 @@ Author Name: Anuroop, Ivan
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="Game1.aspx">Game-1</a></li>
+                    <li class="active"><a href="Game1.aspx">Game-2</a></li>
+                    <li class="active"><a href="Game1.aspx">Game-3</a></li>
+                    <li class="active"><a href="Game1.aspx">Game-4</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
