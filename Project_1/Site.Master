@@ -43,6 +43,12 @@ Author Name: Anuroop, Ivan
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="Game1.aspx">Game-1</a></li>
                 </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Login</a></li>
+                   
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
