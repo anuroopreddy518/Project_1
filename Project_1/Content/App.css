@@ -7,4 +7,9 @@
     Discription: Custome css to provide Designing
  */
 
-    
+.bg{
+    background: url(../Assets/Football-Ground-6.jpg);
+    width:100%;
+    background-size:cover;
+    height:500px;
+}

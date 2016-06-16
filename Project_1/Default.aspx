@@ -8,5 +8,11 @@ Author Name: Anuroop, Ivan
     Version:1.1
     Discription: Default Page to track games
     -->
-    <h1>Part-1</h1>
+    <div class="container bg">
+        <div class="row">
+            <div class="col-md-offset-5 col-md-2" style="padding-top:20%;">
+                <a href="Game1.aspx" class="btn btn-info center-block" role="button">Game results</a>                                    
+            </div>
+        </div>
+    </div>
 </asp:Content>
