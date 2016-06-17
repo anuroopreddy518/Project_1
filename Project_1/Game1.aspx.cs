@@ -5,7 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
+/*
+Author Name: Anuroop, Ivan
+    Student Number:200265054, 200253631
+    Date: 08-06-2016
+    Version:1.1
+    Discription: Game 1 with details with db connection 
+    */
 // using statements that are required to connect to EF DB
 using Project_1.Models;
 using System.Web.ModelBinding;
@@ -18,12 +24,12 @@ namespace Project_1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // if loading the page for the first time, populate the student grid
+            // if loading the page for the first time, populate the game 1
             if (!IsPostBack)
             {
                 Session["SortColumn"] = "StudentID"; // default sort column
                 Session["SortDirection"] = "ASC";
-                // Get the student data
+                // Get the game data
                 this.GetGames();
             }
         }
@@ -33,7 +39,7 @@ namespace Project_1
          * This method gets the games data from the DB
          * </summary>
          * 
-         * @method GetStudents
+         * @method Getgame1
          * @returns {void}
          */
         protected void GetGames()
@@ -43,7 +49,7 @@ namespace Project_1
             {
                
 
-                // query the Students Table using EF and LINQ
+                // query the game Table using EF and LINQ
                 var Games = (from allgames in db.MAIN_GAME
                                 select allgames);
 

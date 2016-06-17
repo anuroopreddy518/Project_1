@@ -5,7 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
+/*
+Author Name: Anuroop, Ivan
+    Student Number:200265054, 200253631
+    Date: 08-06-2016
+    Version:1.1
+    Discription: Game 1 with details with db connection 
+    */
+    
 // using statements that are required to connect to EF DB
 using Project_1.Models;
 using System.Web.ModelBinding;
@@ -31,12 +38,12 @@ namespace Project_1
             // connect to the EF DB
             using (DefaultConnection db = new DefaultConnection())
             {
-                // populate a game object instance with the StudentID from the URL Parameter
+                // populate a game object instance with the gameID from the URL Parameter
                 MAIN_GAME updatedGame = (from game in db.MAIN_GAME
                                           where game.GAME_NAME == ID
                                           select game).FirstOrDefault();
 
-                // map the student properties to the form controls
+                // map the game properties to the form controls
                 if (updatedGame != null)
                 {
                     GameNameTextBox.Text = updatedGame.GAME_NAME;
@@ -60,24 +67,24 @@ namespace Project_1
             // Use EF to connect to the server
             using (DefaultConnection db = new DefaultConnection())
             {
-                // use the Student model to create a new student object and
+                // use the game model to create a new game object and
                 // save a new record
                 MAIN_GAME newGame = new MAIN_GAME();
 
                 int GameID = 0;
 
-                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0) // our URL has a GameID in it
                 {
                     // get the id from the URL
                     GameID = Convert.ToInt32(Request.QueryString["ID"]);
 
-                    // get the current student from EF DB
+                    // get the current Game from EF DB
                     newGame = (from game in db.MAIN_GAME
                                   where game.ID == GameID
                                   select game).FirstOrDefault();
                 }
 
-                // add form data to the new student record
+                // add form data to the new Game record
                 newGame.GAME_NAME = GameNameTextBox.Text;
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
                 newGame.TEAM_A = TeamATextBox.Text;
@@ -87,7 +94,7 @@ namespace Project_1
                 newGame.WINNING_TEAM = WinningTeamTextBox.Text;
 
 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new Game into the database
 
                 if (GameID == 0)
                 {
@@ -98,7 +105,7 @@ namespace Project_1
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated Game page
                 Response.Redirect("~/Game1.aspx");
             }
         }
