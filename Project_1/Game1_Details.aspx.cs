@@ -36,7 +36,7 @@ namespace Project_1
             int GameID = Convert.ToInt32(Request.QueryString["ID"]);
 
             // connect to the EF DB
-            using (DefaultConnection db = new DefaultConnection())
+            using (ProjectConnection db = new ProjectConnection())
             {
                 // populate a game object instance with the gameID from the URL Parameter
                 MAIN_GAME updatedGame = (from game in db.MAIN_GAME
@@ -65,7 +65,7 @@ namespace Project_1
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (ProjectConnection db = new ProjectConnection())
             {
                 // use the game model to create a new game object and
                 // save a new record

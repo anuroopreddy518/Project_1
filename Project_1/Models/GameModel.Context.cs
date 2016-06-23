@@ -13,10 +13,10 @@ namespace Project_1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DefaultConnection : DbContext
+    public partial class ProjectConnection : DbContext
     {
-        public DefaultConnection()
-            : base("name=DefaultConnection")
+        public ProjectConnection()
+            : base("name=ProjectConnection")
         {
         }
     

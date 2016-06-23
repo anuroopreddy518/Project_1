@@ -45,7 +45,7 @@ namespace Project_1
         protected void GetGames()
         {
             // connect to EF
-            using (DefaultConnection db = new DefaultConnection())
+            using (ProjectConnection db = new ProjectConnection())
             {
                
 
