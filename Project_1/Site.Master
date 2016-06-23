@@ -41,16 +41,23 @@ Author Name: Anuroop, Ivan
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="Game1.aspx">Game-1</a></li>
-                    <li><a href="Game1.aspx">Game-2</a></li>
-                    <li><a href="Game1.aspx">Game-3</a></li>
-                    <li><a href="Game1.aspx">Game-4</a></li>
+                    <asp:PlaceHolder ID="GamePlaceHolder" runat="server">
+                     <li class="active"><a href="/Admin/Game1.aspx">Game-1</a></li>
+                     <li><a href="/Admin/Game2.aspx">Game-2</a></li>
+                     <li><a href="/Admin/Game3.aspx">Game-3</a></li>
+                     <li><a href="/Admin/Game4.aspx">Game-4</a></li>
+                    </asp:PlaceHolder>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Admin</a></li>
-                    <li><a href="#">Login</a></li>
-                   
+                    <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
+                        <li><a href="/Register.aspx">Register</a></li>
+                        <li><a href="/Login.aspx">Login</a></li>
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="UserPlaceHolder" runat="server">
+                        <li><a href="/Logout.aspx">Logout</a></li>
+                    </asp:PlaceHolder>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

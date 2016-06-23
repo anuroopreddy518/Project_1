@@ -59,7 +59,7 @@ namespace Project_1
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Game1.aspx");
+            Response.Redirect("~/Admin/Game1.aspx");
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
@@ -106,7 +106,7 @@ namespace Project_1
                 db.SaveChanges();
 
                 // Redirect back to the updated Game page
-                Response.Redirect("~/Game1.aspx");
+                Response.Redirect("~/Admin/Game1.aspx");
             }
         }
     }

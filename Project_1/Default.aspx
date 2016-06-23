@@ -11,7 +11,7 @@ Author Name: Anuroop, Ivan
     <div class="container bg">
         <div class="row">
             <div class="col-md-offset-5 col-md-2" style="padding-top:20%;">
-                <a href="Game1.aspx" class="btn btn-info center-block" role="button">Game results</a>                                    
+                <a href="/Admin/MainMenu.aspx" class="btn btn-info center-block" role="button">Game results</a>                                    
             </div>
         </div>
     </div>
