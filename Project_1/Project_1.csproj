@@ -120,6 +120,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Game2.aspx" />
+    <Content Include="Admin\Game2_Details.aspx" />
     <Content Include="Admin\MainMenu.aspx" />
     <Content Include="Assets\Football-Ground-6.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -186,6 +188,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Game2.aspx.cs">
+      <DependentUpon>Game2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Game2.aspx.designer.cs">
+      <DependentUpon>Game2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Game2_Details.aspx.cs">
+      <DependentUpon>Game2_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Game2_Details.aspx.designer.cs">
+      <DependentUpon>Game2_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\MainMenu.aspx.cs">
       <DependentUpon>MainMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

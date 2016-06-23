@@ -49,6 +49,8 @@
 
                         </div>
 
+                        <p>Dont have an account? <a href="Register.aspx">Register</a> </p>
+
                     </div>
 
                 </div>

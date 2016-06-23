@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 /*
 Author Name: Anuroop, Ivan
     Student Number:200265054, 200253631
@@ -17,10 +18,9 @@ using Project_1.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
-
-namespace Project_1
+namespace Project_1.Admin
 {
-    public partial class Game1 : System.Web.UI.Page
+    public partial class Game2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -97,4 +97,3 @@ namespace Project_1
         }
     }
 }
-    
