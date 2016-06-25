@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <h1>Game Details</h1>
+                <h1>Game 1 Details</h1>
 
                 <asp:PlaceHolder ID="GamePlaceHolder" runat="server">               
                     <a href="/Details/Game1_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
