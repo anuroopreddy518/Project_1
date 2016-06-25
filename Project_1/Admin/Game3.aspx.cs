@@ -17,10 +17,9 @@ using Project_1.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
-
-namespace Project_1
+namespace Project_1.Admin
 {
-    public partial class Game1 : System.Web.UI.Page
+    public partial class Game3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -34,7 +33,7 @@ namespace Project_1
                 {
 
                     // show the Contoso Content area
-                    GamePlaceHolder.Visible = true;                    
+                    GamePlaceHolder.Visible = true;
                 }
                 else
                 {
@@ -113,9 +112,9 @@ namespace Project_1
 
         protected void GameGridView_RowDataBound(object sender, GridViewRowEventArgs e)
         {
-            if(e.Row.RowType == DataControlRowType.DataRow)
+            if (e.Row.RowType == DataControlRowType.DataRow)
             {
-                if(HttpContext.Current.User.Identity.IsAuthenticated)
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
                     GameGridView.Columns[8].Visible = true;
                 }
@@ -123,4 +122,3 @@ namespace Project_1
         }
     }
 }
-    

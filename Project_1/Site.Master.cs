@@ -26,14 +26,14 @@ namespace Project_1
                 {
 
                     // show the Contoso Content area
-                    GamePlaceHolder.Visible = true;
+                    //GamePlaceHolder.Visible = true;
                     PublicPlaceHolder.Visible = false;
                     UserPlaceHolder.Visible = true;
                 }
                 else
                 {
                     // only show login and register
-                    GamePlaceHolder.Visible = false;
+                    //GamePlaceHolder.Visible = false;
                     PublicPlaceHolder.Visible = true;
                     UserPlaceHolder.Visible = false;
 

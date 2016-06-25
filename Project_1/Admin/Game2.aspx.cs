@@ -29,6 +29,19 @@ namespace Project_1.Admin
             {
                 Session["SortColumn"] = "StudentID"; // default sort column
                 Session["SortDirection"] = "ASC";
+
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+
+                    // show the Contoso Content area
+                    GamePlaceHolder.Visible = true;
+                }
+                else
+                {
+                    // only show login and register
+                    GamePlaceHolder.Visible = false;
+
+                }
                 // Get the game data
                 this.GetGames();
             }
@@ -93,6 +106,17 @@ namespace Project_1.Admin
 
                 // refresh the grid
                 this.GetGames();
+            }
+        }
+
+        protected void GameGridView_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    GameGridView.Columns[8].Visible = true;
+                }
             }
         }
     }

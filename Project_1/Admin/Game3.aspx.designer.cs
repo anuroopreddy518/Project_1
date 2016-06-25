@@ -10,7 +10,7 @@
 namespace Project_1.Admin {
     
     
-    public partial class Game2 {
+    public partial class Game3 {
         
         /// <summary>
         /// GamePlaceHolder control.

@@ -17,8 +17,9 @@
 
                         <a class="list-group-item" href="/Admin/Game1.aspx"><i class="fa fa-th-list"></i> Game List</a>
 
-                        <a class="list-group-item" href="/Admin/Game1_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
-
+                        <asp:PlaceHolder ID="GamePlaceHolder" runat="server">
+                        <a class="list-group-item" href="/Details/Game1_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
+                        </asp:PlaceHolder>
                     </div>
 
                 </div>
@@ -31,8 +32,9 @@
 
                         <a class="list-group-item" href="/Admin/Game2.aspx"><i class="fa fa-th-list"></i> Game List</a>
 
-                        <a class="list-group-item" href="/Admin/Game2_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
-
+                        <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+                        <a class="list-group-item" href="/Details/Game2_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
+                        </asp:PlaceHolder>
                     </div>
 
                 </div>
@@ -45,8 +47,9 @@
 
                         <a class="list-group-item" href="/Admin/Game3.aspx"><i class="fa fa-th-list"></i> Game List</a>
 
-                        <a class="list-group-item" href="/Admin/Game3_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
-
+                        <asp:PlaceHolder ID="PlaceHolder2" runat="server">
+                        <a class="list-group-item" href="/Details/Game3_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
+                        </asp:PlaceHolder>
                     </div>
 
                 </div>
@@ -59,8 +62,9 @@
 
                         <a class="list-group-item" href="/Admin/Game4.aspx"><i class="fa fa-th-list"></i> Game List</a>
 
-                        <a class="list-group-item" href="/Admin/Game4_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
-
+                        <asp:PlaceHolder ID="PlaceHolder3" runat="server">
+                        <a class="list-group-item" href="/Details/Game4_Details.aspx"><i class="fa fa-plus-circle"></i> Add Game</a>
+                        </asp:PlaceHolder>
                     </div>
 
                 </div>

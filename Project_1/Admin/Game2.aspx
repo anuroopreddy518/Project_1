@@ -5,14 +5,15 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h1>Game Details</h1>
-                <a href="Game1_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
-
+                <asp:PlaceHolder ID="GamePlaceHolder" runat="server">               
+                    <a href="/Details/Game2_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
+                </asp:PlaceHolder>
                 <div>
 
                 </div>
 
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
-                    ID="GameGridView" AutoGenerateColumns="false" OnRowDeleting="GameGridView_RowDeleting" DataKeyNames="ID">
+                    ID="GameGridView" AutoGenerateColumns="false" OnRowDeleting="GameGridView_RowDeleting" DataKeyNames="ID" OnRowDataBound="GameGridView_RowDataBound">
                     <Columns>
                         <asp:BoundField DataField="ID" HeaderText="Game ID" Visible="true"/>
                         <asp:BoundField DataField="GAME_NAME" HeaderText="Game Name" Visible="true"/>
@@ -22,7 +23,7 @@
                         <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total points" Visible="true"/>
                         <asp:BoundField DataField="SPECTATORS" HeaderText="Spectators" Visible="true"/>
                         <asp:BoundField DataField="WINNING_TEAM" HeaderText="Winning Team" Visible="true"/>
-                        <asp:CommandField  HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
+                        <asp:CommandField Visible="false"  HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                 </asp:GridView>

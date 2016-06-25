@@ -11,7 +11,7 @@ Author Name: Anuroop, Ivan
     <div class="container bg">
         <div class="row">
             <div class="col-md-offset-2 col-md-8" style="padding-top:15%;">
-                <div class="text-center" style="color:white; font-size: 30px; font-weight:200;">
+                <div class="text-center main-text" style="">
                  <h1>WELCOME</h1>
                  <h1>TO</h1>
                  <h1>GAME ZONE</h1>
@@ -21,6 +21,9 @@ Author Name: Anuroop, Ivan
                     <br />
                     
                     <a href="/Register.aspx" class="btn btn-info center-block" style="width:30%" role="button">Register</a>  
+                    <br />
+                    
+                    <a href="/Admin/MainMenu.aspx" class="btn btn-info center-block" style="width:30%" role="button">Guest</a>  
                 </div>                                  
             </div>
         </div>
@@ -29,6 +32,11 @@ Author Name: Anuroop, Ivan
     <style>
         .navbar{
             display:none;
+        }
+        .main-text>h1{
+            color:white; 
+            font-size: 35px; 
+            font-weight:600;
         }
     </style>
 </asp:Content>

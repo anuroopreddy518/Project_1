@@ -1,14 +1,13 @@
-﻿<%@ Page Title="Game1" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Game1.aspx.cs" Inherits="Project_1.Game1" %>
+﻿<%@ Page Title="Game4" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Game4.aspx.cs" Inherits="Project_1.Admin.Game4" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="container">
+        <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h1>Game Details</h1>
 
                 <asp:PlaceHolder ID="GamePlaceHolder" runat="server">               
-                    <a href="/Details/Game1_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
+                    <a href="/Details/Game4_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
                 </asp:PlaceHolder>
                 
                 <div>
@@ -33,5 +32,4 @@
             </div>
         </div>
     </div>
-
 </asp:Content>
