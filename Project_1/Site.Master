@@ -36,27 +36,28 @@ Author Name: Anuroop, Ivan
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/Admin/MainMenu.aspx">Games</a>
+                <a class="navbar-brand" href="/Default.aspx"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a class="navbar-brand" href="/Admin/MainMenu.aspx"><i class="fa fa-list" aria-hidden="true"></i> Menu</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                    <%-- <asp:PlaceHolder ID="GamePlaceHolder" runat="server">--%>
-                     <li id="game1"><a href="/Admin/Game1.aspx">Game-1</a></li>
-                     <li id="game2"><a href="/Admin/Game2.aspx">Game-2</a></li>
-                     <li id="game3"><a href="/Admin/Game3.aspx">Game-3</a></li>
-                     <li id="game4"><a href="/Admin/Game4.aspx">Game-4</a></li>
+                     <li id="game1"><a href="/Admin/Game1.aspx"><i class="fa fa-gamepad" aria-hidden="true"></i> Game-1</a></li>
+                     <li id="game2"><a href="/Admin/Game2.aspx"><i class="fa fa-gamepad" aria-hidden="true"></i> Game-2</a></li>
+                     <li id="game3"><a href="/Admin/Game3.aspx"><i class="fa fa-gamepad" aria-hidden="true"></i> Game-3</a></li>
+                     <li id="game4"><a href="/Admin/Game4.aspx"><i class="fa fa-gamepad" aria-hidden="true"></i> Game-4</a></li>
                     <%--</asp:PlaceHolder>--%>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
-                        <li id="register"><a href="/Register.aspx">Register</a></li>
-                        <li id="login"><a href="/Login.aspx">Login</a></li>
+                        <li id="register"><a href="/Register.aspx"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
+                        <li id="login"><a href="/Login.aspx"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
                     </asp:PlaceHolder>
 
                     <asp:PlaceHolder ID="UserPlaceHolder" runat="server">
-                        <li><a href="/Logout.aspx">Logout</a></li>
+                        <li><a href="/Logout.aspx"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
                     </asp:PlaceHolder>
                 </ul>
             </div>
